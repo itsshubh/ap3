@@ -1,0 +1,119 @@
+<!doctype html>
+<head>
+	<title>product page</title>
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<!-- jquery cdn -->
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"></script>
+		<!-- js impport-->  
+		<script src="js/product.js"></script>
+		<script src="js/index.js" ></script>
+
+		<!-- js impport-->  
+		
+		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+			<!-- header starts here -->
+			
+			<!-- row first of header starts -->
+			
+			<header class = "row1 header-container-1">
+				<div class = "col-md-4 col-xs-4">
+					<div class = "col-md-6 col-md-offset-3"><img class = "myntra-logo" src = "http://www.advcoupons.com/wp-content/uploads/2016/11/myntra-logo-image.jpg"></div>
+				</div>
+				<div class = "col-md-4 col-xs-4">
+					<div class = "col-md-6 col-md-offset-3">Myntra</div>
+				</div>
+
+				<div class = "col-md-4 col-xs-4">
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+						<div class = "col-md-6 col-md-offset-3 "><img class = "cart-icon" src = "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldp8foyR-5_H1uUxZVj541kaf-trCx8oXiloDWctSLoYnzs82"></div>
+					</button>
+				</div>
+			</header>
+		
+		<!-- row first of header ends -->
+
+
+		<!-- row Second of header starts -->
+
+			<div class = "row2 header-container-2">
+				<div class ="col-md-1 col-md-offset-1 navbar">
+					<div id="mySidenav" class="sidenav">
+					  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					  	<a href="index.html">Home</a>
+						<a href="index.html">All</a>
+						<a href="#">Men's</a>
+						<a href="#">Women's</a>
+						<a href="#">Kid's</a>
+						<a href="#">Cart</a>
+						<a href="aboutus.html">About Us</a>
+						<a href="contact.html">Contact Us</a>
+					</div>
+					<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				</div>
+				<div class = "col-md-6"><input class = "search-box form-control input-lg" placeholder= "search by brandname or product name" id = "inputlg" type="text"></div>
+				<div class = "col-md-1"><button class="search-btn">Search</button></div>
+				<div class = "col-md-1 col-md-offset-1 sell"><button type="button" data-toggle="modal" data-target="#sellModal">Sell</button></div>
+
+			</div>
+
+		<!-- row second of header ends -->
+
+	<!-- header ends here -->
+
+
+	<div><title></title></div>
+	<div class="row product-name"></div>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1 product-img"><img height="350px" width="300px"></div>
+		<div class="col-md-5">
+			
+			<div class="row">
+				<div class="col-md-2">Brand Name</div>
+				<div class="col-md-1 brand"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Description:</div>
+				<div class="col-md-6 description"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Sold By:</div>
+				<div class="col-md-1 sold-by"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Rating</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Quantity:</div>
+				<div class="col-md-1 quantity"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Size:</div>
+				<div class="col-md-1 size"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-2">Price:</div>
+				<div class="col-md-1 price"></div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+</body>

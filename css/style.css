@@ -1,0 +1,171 @@
+
+
+/* header styling starts */
+.myntra-logo{
+	width:35%;
+	height:35%;
+	margin-left:25px;
+}
+.cart-icon{
+	width:30%;
+	height:30%;
+}
+.row1 {
+	font-size: 66px;
+}
+
+.row2 button {
+    width: 138px;
+    height: 52px;
+    border-radius: 8px;
+    margin-top: 20px;   
+}
+.row2 img{
+	margin-left: 150px;
+	margin-top: 6px;
+	height: 75px;
+	width: 75px;
+}
+.header-container-1{
+	
+	border-bottom: 2px solid black;
+	min-height: 120px;
+	
+
+}
+.header-container-2{
+	border-bottom: 2px solid black;
+	min-height: 100px;
+
+}
+#inputlg{
+	margin-top: 22px;
+}
+.sell {
+	margin-left: 30px;
+}
+/* header styling ends */
+
+/* side navigation styling starts*/
+
+	/* The side navigation menu */
+
+	.sidenav {
+	    height: 100%; /* 100% Full-height */
+	    width: 0; /* 0 width - change this with JavaScript */
+	    position: fixed; /* Stay in place */
+	    z-index: 1; /* Stay on top */
+	    top: 0;
+	    left: 0;
+	    background-color: #111; /* Black*/
+	    overflow-x: hidden; /* Disable horizontal scroll */
+	    padding-top: 60px; /* Place content 60px from the top */
+	    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	}
+
+	/* The navigation menu links */
+	.sidenav a {
+	    padding: 8px 8px 8px 32px;
+	    text-decoration: none;
+	    font-size: 25px;
+	    color: #818181;
+	    display: block;
+	    transition: 0.3s
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover, .offcanvas a:focus{
+	    color: #f1f1f1;
+	}
+
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {
+	    position: absolute;
+	    top: 0;
+	    right: 25px;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+	.navbar{
+		padding-top: 8px;
+	}
+/* side navigation styling ends*/
+
+
+
+/* product container styling starts */
+
+.product-container{
+	text-align:center;
+	border:2px solid;
+	padding-bottom:20px;
+	margin:40px;
+	height: 400px;
+	max-width: 300px;
+	border-radius: 10px;
+}
+.product-img{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	padding-bottom:20px;
+	padding-top:10px;
+
+}
+
+
+/* product container styling ends */
+
+
+
+/* product-page styling starts */
+
+.product-name{
+	margin-top: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 36px;
+    text-transform: capitalize;
+}
+.product-img img{
+	margin-left: 210px;
+    margin-top: -18px;
+}
+
+/* product-page styling ends */
+
+
+
+
+.pagination {
+    display: inline-block;
+    padding-left: 650px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    border: 1px solid; 
+}
+
+
+
+.carousel-inner .item  img{
+      width: 70%;
+      margin: auto;
+}
+.carousel-inner .item a img {
+      width: 70%;
+      margin: auto;
+}
+
+
+
+
+@media screen and (max-width: 420px){
+	.product-container{
+		margin-left:200px;
+	}
+	
+}
