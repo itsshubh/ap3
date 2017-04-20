@@ -1,3 +1,4 @@
+var total=0;
 function fillProductList(response){
      $('.container').empty();
         console.log(response);
@@ -17,12 +18,12 @@ function fillProductList(response){
 
 
         var productNameTag = $('<div class="product-name"></div>').html(productName);
-        var sizeTag = $('<div class="size"></div>').html(size);
-        var priceTag = $('<div class="price"></div>').html(price);
-        var soldTag = $('<div class="sold-by"></div>').html(sold_by);
-        var quantityTag = $('<div class="quantity"></div>').html(quantity);
-        var genderTag = $('<div class="gender"></div>').html(gender);
-        var itemCtgTag = $('<div class="item-ctg"></div>').html(item_category);
+        var sizeTag = $('<div class="size hidden"></div>').html(size);
+        var priceTag = $('<div class="price hidden"></div>').html(price);
+        var soldTag = $('<div class="sold-by hidden"></div>').html(sold_by);
+        var quantityTag = $('<div class="quantity hidden"></div>').html(quantity);
+        var genderTag = $('<div class="gender  hidden"></div>').html(gender);
+        var itemCtgTag = $('<div class="item-ctg hidden"></div>').html(item_category);
         var imageTag = $('<img class="product-img" width="200px" height="200px">').attr("src",image);
         var brandTag = $('<div class="brand"></div>').html(brand);
         var descriptionTag = $('<div class="description hidden"></div>').html(description);
@@ -35,12 +36,20 @@ function fillProductList(response){
                 var pn = $($(this).parent().find(".product-name")).text();
                 var p = $($(this).parent().find(".price")).text();
                 var td1 = $('<td></td>').text(pn);
-                var td2 = $('<td></td>').html("<input type ='number' value='1'>");
+                var td2 = $('<td></td>').html("<input type ='text' id='quantityc' value='1'>");
                 var td3 = $('<td></td>').text(p);
-                var td4 = $('<td></td>').text(p);
-                var tableRow = $('<tr></tr>').append(td1, td2, td3, td4)
+                var td4 = $('<td class="total1"></td>').text(p);
+                var tableRow = $('<tr></tr>').append(td1, td2, td3, td4);
                 $('.table-heading').after(tableRow);
         });
+        $('#quantityc').on('keyup',function(){
+            var p1 = $($(this).parent().parent().find('.price')).html();
+            var qty1 = $('this').value;
+            total = p1*qty1;
+            $('.total1').append(total);
+        })
+        
+
         $(imageTag).click(function(){
             var productName = $($(this).parent().find(".product-name")).html();
             var size = $($(this).parent().find('.size')).html();
@@ -87,7 +96,7 @@ $(document).ready(function(){
      
         $('.pagination a').click(function(){
                 var pageNumber = parseInt($(this).text());
-                getProductList(pageNumber - 1)
+                getProductList(pageNumber - 1);
         });
 
 
